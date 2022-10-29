@@ -1,0 +1,84 @@
+html{
+overflow: hidden;
+}
+
+.MainFon{
+    background-color: black;
+    display: flex;
+}
+
+
+form{
+    position: relative;
+    margin: 10% auto;
+flex-direction: column;
+}
+
+.MainFieldset{
+    border-radius: 30px;
+    width: 400px;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.p1{
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+}
+
+.p2{
+    text-align: 50px;
+    color: white;
+    font-family: Montserrat;
+    margin-left: 40px;
+}
+
+.p3{
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.input{
+    width: 80%;
+    height: 45px;
+    border-radius: 30px;
+    border-color: gray;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+.inputEnter{
+    width: 40%;
+    height: 50px;
+    border-radius: 30px;
+    border-color: gray;
+    margin-top: 30px;
+    margin: 25px auto;
+    display: block;
+}
+
+
+.video{
+    width: 400px;
+    height: 400px;
+}
+
+video{
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    bottom: 30%;
+}
+
+
+
+.msg{
+    text-align: center;
+    color: white;
+}
