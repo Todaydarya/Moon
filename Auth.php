@@ -10,7 +10,7 @@
     </head>
 
     <body class="MainFon">
-        <form action="Registration.php" method="post">
+        <form action="Auth_info.php" method="post">
             <fieldset class="MainFieldset">
             <h1 class="p1">Вход</h1>
                 <h4 class="p2">Логин</h4>

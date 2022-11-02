@@ -9,23 +9,26 @@
 
 
 
-	function generateSalt()
-	{
-		$salt = '';
-		$saltLength = 8; // длина соли
+	// function generateSalt()
+	// {
+	// 	$salt = '';
+	// 	$saltLength = 8; // длина соли
 		
-		for($i = 0; $i < $saltLength; $i++) {
-			$salt .= chr(mt_rand(33, 126)); // символ из ASCII-table
-		}
+	// 	for($i = 0; $i < $saltLength; $i++) {
+	// 		$salt .= chr(mt_rand(33, 126)); // символ из ASCII-table
+	// 	}
 		
-		return $salt;
-	}
+	// 	return $salt;
+	// }
 
 
-	$salt = generateSalt(); // соль
-	$password = md5($salt . $_POST['password']); // соленый пароль 
-    $password_2 = md5($salt . $_POST['password_2']);
+	// $salt = generateSalt(); // соль
+	// $password = md5($salt . $_POST['password']); // соленый пароль 
+    // $password_2 = md5($salt . $_POST['password_2']);
 
+
+    $password = md5($_POST['password']);
+    $password_2 = md5($_POST['password_2']);
 
     if ($password === $password_2){
         mysqli_query($connect, "INSERT INTO `users` (`id`, `login`, `password`, `email`) VALUES ('', '$login', '$password', '$email')");
