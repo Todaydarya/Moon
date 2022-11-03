@@ -16,16 +16,16 @@
                 <h1 class="p1">Регистрация</h1>
 
                 <h4 class="p2">Логин</h4>
-                <input type="text" class="input" name="login">
+                <input type="text" class="input" name="login" required>
 
                 <h4 class="p2">Email</h4>
-                <input type="text" class="input" name="email">
+                <input type="email" class="input" name="email" required>
 
                 <h4 class="p2">Пароль</h2>
-                <input type="password" class="input" name="password">
+                <input type="password" class="input" name="password" required>
 
                 <h4 class="p2">Подтверждение пароля</h2>
-                <input type="password" class="input" name="password_2">
+                <input type="password" class="input" name="password_2" required>
                 
                 <?php
                     if ($_SESSION['message']){

@@ -1,3 +1,3 @@
 <?php
-    $connect = mysqli_connect('moon', 'root', '', 'moon');
+    $connect = mysqli_connect('localhost', 'root', '', 'Moon');
 ?>
