@@ -4,14 +4,16 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="style.css">
+    
     <head>
         <!-- <link rel="styleshhet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"> -->
         <title></title> 
     </head>
 
     <body class="MainFon">
-        <form action="Registration_info.php" method="post" >
-            <fieldset class="MainFieldset">
+    
+        <form action="Registration_info.php" method="post">
+            <fieldset class="MainFieldsetReg">
                 
                 <h1 class="p1">Регистрация</h1>
 
@@ -19,7 +21,7 @@
                 <input type="text" class="input" name="login" required>
 
                 <h4 class="p2">Email</h4>
-                <input type="email" class="input" name="email" required>
+                <input type="email" class="input" name="email" onclick="ValidateEmail()" id="userEmail" required>
 
                 <h4 class="p2">Пароль</h2>
                 <input type="password" class="input" name="password" required>
@@ -33,12 +35,18 @@
                     }
                     unset($_SESSION['message']);
                 ?>
+                <div class="gg">
+                    <input type="button" class="inputEnter p3" onclick="history.back();" value="Вернуться">
+                    <input type="submit" class="inputEnter p3" value="Enter" class="p2">
+                </div>
                 
-                <input type="submit" class="inputEnter p3" value="Enter" class="p2">
             </fieldset>
             <video id="video_background" preload="auto" autoplay loop playsinline muted >
                 <source src="Moon.mp4" type='video/mp4' />
             </video>
-        </form>   
+        </form> 
+          
+        <script src="email.js"></script>
+        <!-- <input type="submit" value="Проверка" onclick="ValidateEmail()"> -->
     </body>
 </html>

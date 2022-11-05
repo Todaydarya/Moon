@@ -14,13 +14,13 @@
             <fieldset class="MainFieldset">
             <h1 class="p1">Вход</h1>
                 <h4 class="p2">Логин</h4>
-                <input type="text" class="input" name="login" id="login">  
+                <input type="text" class="input" name="login" id="login" required>  
                 <h4 class="p2">Пароль</h2>
-                <input type="password" class="input" name="password" id="password">
+                <input type="password" class="input" name="password" id="password" required>
+                <a href="http://auth/Registration.php" class="reg1">Зарегистрироваться</a>
                 <input type="submit" class="inputEnter p3" value="Enter">
-            
                 <video id="video_background" preload="auto" autoplay loop playsinline muted >
-                    <source src="Moon.mp4" type='video/mp4' />
+                    <source src="Moon.mp4" type='video/mp4'/>
                 </video>
             </fieldset>
         </form>   

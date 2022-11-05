@@ -10,8 +10,8 @@ overflow: hidden;
 
 form{
     position: relative;
-    margin: 10% auto;
-flex-direction: column;
+    margin: 5% auto;
+    flex-direction: column;
 }
 
 .MainFieldset{
@@ -20,7 +20,7 @@ flex-direction: column;
     height: auto;
     display: block;
     align-items: center;
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 .p1{
@@ -81,4 +81,32 @@ video{
 .msg{
     text-align: center;
     color: white;
+}
+
+
+
+.gg{
+    display: flex;
+    justify-content: center;
+}
+
+
+.MainFieldsetReg{
+    border-radius: 30px;
+    width: 400px;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 0%;
+}
+
+.reg1{
+    font-family: Montserrat;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 15px 20px;
 }
