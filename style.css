@@ -10,7 +10,7 @@ overflow: hidden;
 
 form{
     position: relative;
-    margin: 5% auto;
+    margin: 0 auto;
     flex-direction: column;
 }
 
@@ -103,10 +103,10 @@ video{
 
 .reg1{
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     text-decoration: none;
     display: block;
     text-align: center;
-    margin: 15px 20px;
+    margin-top: 20px;
 }
