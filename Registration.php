@@ -21,7 +21,7 @@
                 <input type="text" class="input" name="login" required>
 
                 <h4 class="p2">Email</h4>
-                <input type="email" class="input" name="email" onclick="ValidateEmail()" id="userEmail" required>
+                <input type="email" class="input" name="email" pattern="[A-Za-z]+[0-9]{6}+^[ 0-9]+$" required>
 
                 <h4 class="p2">Пароль</h2>
                 <input type="password" class="input" name="password" required>
@@ -35,9 +35,13 @@
                     }
                     unset($_SESSION['message']);
                 ?>
+                 <!-- <div>
+                    <input type="checkbox" id="input" />
+                    <button type="button" id="btn" onclick="alert('Working')" disabled="disabled">Try to click me</button>
+                </div> -->
                 <div class="gg">
                     <input type="button" class="inputEnter p3" onclick="history.back();" value="Вернуться">
-                    <input type="submit" class="inputEnter p3" value="Enter" class="p2">
+                    <input type="submit" class="inputEnter p3" value="Продолжить" class="p2">
                 </div>
                 
             </fieldset>
@@ -47,6 +51,16 @@
         </form> 
           
         <script src="email.js"></script>
+        <!-- <script>
+            $("input").on("keypress", function(e) {
+            
+            var char = /["a-zA-Z]/;
+            var val = String.fromCharCode(e.which);
+            var test = char.test(val);
+            
+            if(!test) return false;
+            })
+        </script> -->
         <!-- <input type="submit" value="Проверка" onclick="ValidateEmail()"> -->
     </body>
 </html>
