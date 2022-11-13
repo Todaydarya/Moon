@@ -2,15 +2,19 @@ html{
 overflow: hidden;
 }
 
-.MainFon{
+.Fon{
     background-color: black;
-    display: flex;
 }
 
-
-form{
+.FormReg{
     position: relative;
-    margin: 0 auto;
+    flex-direction: column;
+    margin: 10% auto;
+} 
+
+.FormAuth{
+    position: relative;
+    margin: 10% auto;
     flex-direction: column;
 }
 
@@ -33,6 +37,12 @@ form{
     text-align: 50px;
     color: white;
     font-family: Montserrat;
+}
+
+.p2Auth{
+    text-align: 50px;
+    color: white;
+    font-family: Montserrat;
     margin-left: 40px;
 }
 
@@ -42,6 +52,18 @@ form{
 }
 
 .input{
+    width: 250px;
+    height: 45px;
+    border-radius: 30px;
+    border-color: gray;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+.inputAuth{
     width: 80%;
     height: 45px;
     border-radius: 30px;
@@ -59,8 +81,15 @@ form{
     border-radius: 30px;
     border-color: gray;
     margin-top: 30px;
-    margin: 25px auto;
     display: block;
+}
+
+.inputEnterAuth{
+    margin: 25px auto;
+}
+
+.inputEnterReg{
+    margin: 10px auto;
 }
 
 
@@ -88,12 +117,13 @@ video{
 .gg{
     display: flex;
     justify-content: center;
+    margin: 10px 5%;
 }
 
 
 .MainFieldsetReg{
     border-radius: 30px;
-    width: 400px;
+    width: 600px;
     height: auto;
     display: block;
     align-items: center;
@@ -103,10 +133,76 @@ video{
 
 .reg1{
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 18px;
     color: white;
     text-decoration: none;
     display: block;
     text-align: center;
-    margin-top: 20px;
+}
+
+.AuthPx{
+    margin: 20px auto;
+}
+
+.RegPx{
+    margin: 5px auto;
+}
+
+.marginreg{
+    margin: 10px 30px;
+}
+
+/* Нельзя выделять */
+.disable-select {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+
+
+/* Оформление чекбокса */
+/* прячем input checkbox */
+input[type="checkbox"] {
+display: none;
+}
+
+/* стили для метки */
+label {
+color: #000;
+cursor: default;
+font-weight: normal;
+line-height: 30px;
+padding: 10px 0;
+vertical-align: middle;
+}
+
+/* формируем внешний вид чекбокса в псевдоэлементе before */
+label:before {
+content: " ";
+color: #000;
+display: inline-block;
+font: 20px/30px Arial;
+margin-right: 15px;
+position: relative;
+text-align: center;
+text-indent: 0px;
+width: 30px;
+height: 30px;
+background: #FFF;
+border: 1px solid #e3e3e3;
+border-image: initial;
+vertical-align: middle;
+}
+
+/* вариации внешнего вида в зав-ти от статуса checkbox */
+/* checked */
+input:checked + label:before {
+content: "❤";
+}
+/* disabled */
+input:disabled + label:before {
+background: #eee;
+color: #aaa;
 }
